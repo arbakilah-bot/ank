@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - 404 Hunger Not Found</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: burlywood;
+      color: black;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+    a{
+      color: #000;
+    }
+
+    header, footer {
+      background-color: rgb(64, 34, 13);
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    nav {
+      background-color: rgb(106, 53, 15);
+      display: flex;
+      justify-content: flex-start;
+      gap: 1rem;
+      padding: 0.5rem 1rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      padding: 0.2rem 0.5rem;
+    }
+
+    nav a.active {
+      background-color: burlywood;
+      color: #000;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background-color: burlywood;
+      color: #000;
+    }
+
+    main {
+      padding: 2rem;
+      flex: 1;
+    }
+
+  </style>
+</head>
+<link rel="stylesheet" href="sss2">
+<body>
+  <header>
+    <h1>About Us</h1>
+    <img src="capa biblioteca digital.png"  style="width: 400px; height: 150px;">
+  </header>
+
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="Books.html">Books</a>
+    <a href="aboutus.html" class="active">About Us</a>
+    <a href="contactus.html">Contact Us</a>
+  </nav>
+
+  <main>
+    <h1>We are three students, obsessed with programming and reading books, and we aspire to influence as many people as possible.</h1>
+    
+      <a href="About-me.html">Abdulrahman : project manager and Interface designer</a>
+      <br>
+      <br>
+      <a href="khaled about me.html">Khaled: Backend Developer</a>
+      <br>
+      <br>
+      <a href="nawaf.html">Nawaf: contant writer</a>
+    
+
+    <script>
+        const teamItems = document.querySelectorAll("ul li h3");
+      
+        teamItems.forEach(item => {
+          item.addEventListener("mouseover", () => {
+          
+          });
+          item.addEventListener("mouseout", () => {
+           
+          });
+        });
+      </script>
+    
+    <section id="story"></section>
+
+    <script>
+      const storySection = document.getElementById("story");
+      const storyText = `
+        <h2>Our Story</h2>
+        <p>
+          Our library started as a simple conversation between friends, then evolved into a project idea we were determined to make it success. 
+          There were many obstacles that could have ended our dream, but with patience and willpower, we were able to make our dream a reality.
+        </p>
+      `;
+      storySection.innerHTML = storyText;
+    </script>
+  </main>
+
+  <footer>
+    <p>&copy; A N K Digital Libary - Student Project</p>
+  </footer>
+</body>
+</html>
